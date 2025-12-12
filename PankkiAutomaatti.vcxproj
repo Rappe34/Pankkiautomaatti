@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PankkiAutomaatti.c" />
-    <ClCompile Include="sus.c" />
+    <ClCompile Include="PankkiAutomaattiWrapper.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="12345.acc" />

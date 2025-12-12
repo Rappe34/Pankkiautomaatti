@@ -8,7 +8,7 @@ int main(void) {
     system("chcp 65001 >nul"); // With this console command precisely
     system("pankkiautomaatti_core.exe");
 
-    Sleep(1000);
+    getchar();
 
     return 0;
 }

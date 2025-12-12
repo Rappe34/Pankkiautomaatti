@@ -18,7 +18,7 @@
     <ClCompile Include="PankkiAutomaatti.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sus.c">
+    <ClCompile Include="PankkiAutomaattiWrapper.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
