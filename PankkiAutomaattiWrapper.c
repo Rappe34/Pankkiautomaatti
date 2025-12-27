@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <Windows.h>
 
-/* This wrapper is just for making sure that the åäö letters show up when running the program in the terminal. */
+/* This wrapper is just for making sure that the Ã¥Ã¤Ã¶ letters show up when running the program in the terminal. */
 
 int main(void) {
     system("chcp 65001 >nul"); // With this console command precisely
