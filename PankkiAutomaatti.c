@@ -4,6 +4,7 @@
 #include <conio.h>
 #include <Windows.h>
 #include <stdbool.h>
+#include <errno.h>
 
 typedef struct {
 	char accountNumber[64];
@@ -256,13 +257,18 @@ Parametrit:
 */
 void readInt(int* n) {
     char input[64];
-    char* end;
+    char* endptr;
 
     readStr(input, sizeof(input));
 
-    long val = strtol(input, &end, 10);
+    errno = 0;
+    long val = strtol(input, &endptr, 10);
 
-    if (end == input || (*end != '\n' && *end != '\0')) {
+    if (errno == ERANGE) {
+        return;
+    } else if (endptr == input) {
+        return;
+    } else if (*endptr && *endptr != '\n') {
         return;
     }
 
